@@ -14,7 +14,6 @@ body{
 }
 
 /* Header */
-
 header{
     background-image: linear-gradient(to right, #4a1e1b, #4a1e1be6);
     color: white;
@@ -105,4 +104,88 @@ header{
     color: red;
     transform: scale(1.05);
     transition-duration: 200ms;
+}
+
+/*responsividade*/
+@media screen and (max-width: 871px){
+    .link-logo {
+        font-size: 1.4rem;
+    }
+
+    .menu-link{
+        display: none;
+    }
+}
+
+/*Body*/
+
+main{
+    min-height: 600px;
+    padding: 0 50px;
+    background-color: #270c03;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container-home{
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+.div-text-home{
+    text-align: start;    
+}
+
+.title-text-home{
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+}
+
+.span-text-home{
+    color: #784538;
+    font-family: 'pacifico';
+}
+
+.button-text-home{
+    background-color: #784538;
+    border: 0.1px solid #fff;
+    border-radius: 20px;
+    padding: 5px 1rem;
+    color: white;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.button-text-home:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition-duration: 200ms;
+}
+
+.img-home{
+    width: 550px;
+    transform: scale(1.25);
+    animation: balanco 10s linear infinite;
+}
+
+@keyframes balanco{
+    0%{
+        transform: scale(1) rotate(0deg);
+    }
+    50%{
+        transform: scale(1) rotate(5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
