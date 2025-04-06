@@ -106,19 +106,7 @@ header{
     transition-duration: 200ms;
 }
 
-/*responsividade*/
-@media screen and (max-width: 871px){
-    .link-logo {
-        font-size: 1.4rem;
-    }
-
-    .menu-link{
-        display: none;
-    }
-}
-
-/*Body*/
-
+/*Main*/
 main{
     min-height: 600px;
     padding: 0 50px;
@@ -178,6 +166,7 @@ main{
     animation: balanco 10s linear infinite;
 }
 
+/*importando keyframes*/
 @keyframes balanco{
     0%{
         transform: scale(1) rotate(0deg);
@@ -187,5 +176,16 @@ main{
     }
     100%{
         transform: rotate(0deg);
+    }
+}
+
+/*responsividade*/
+@media screen and (max-width: 871px){
+    .link-logo {
+        font-size: 1.4rem;
+    }
+
+    .menu-link{
+        display: none;
     }
 }
