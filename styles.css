@@ -226,13 +226,14 @@ main{
 
 /*responsividade Main*/
 @media screen and (max-width: 620px){
-
-
-    .img-home{
-        margin-left: 50px;
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .div-text-home{
+        text-align: center;
+        align-items: center;
     }
 
-    .title-text-home{
-        font-size: 2rem;
-    }
 }
