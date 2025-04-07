@@ -6,6 +6,7 @@
     <link rel="icon" href="./img/icon-coffe-button.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <title>Cafeteria</title>
 </head>
@@ -29,7 +30,7 @@
         </div>
     </header>
     <main>
-        <div class="container-home">
+        <div class="container-home" data-aos="flip-left" data-aos-duration="2000">
             <div class="grid">
                 <div class="div-text-home">
                     <h1 class="title-text-home">
@@ -50,7 +51,7 @@
             <h1 class="text-services">O café feito para você</h1>
         </div>
         <!--SESSÕES DE CARD-->
-        <div class="cards-services">
+        <div class="cards-services" data-aos="flip-left" data-aos-duration="2000">
             <div class="card-service-section">
                 <div class="div-card-img">
                     <img src="./img/american.png" alt="Café americano" class="img-card-services">
@@ -61,7 +62,7 @@
                 </div>
             </div>
         <!--SESSÕES DE CARD-->
-            <div class="card-service-section">
+            <div class="card-service-section" id="alter-img" data-aos="flip-left" data-aos-duration="2000">
                 <div class="div-card-img">
                     <img src="./img/cafe-expresso.png" alt="Café Expresso" class="img-card-services">
                 </div>                
@@ -72,9 +73,9 @@
             </div>
         <!--SESSÕES DE CARD-->
   
-            <div class="card-service-section">
+            <div class="card-service-section" id="alter-img" data-aos="flip-left" data-aos-duration="2000">
                 <div class="div-card-img">
-                    <img src="./img/capuccino.png" alt="Café capuccino" class="img-card-services">
+                    <img src="./img/capuccino.png" alt="Café capuccino"  class="img-card-services">
                 </div>                
                 <div class="text-card-img">
                     <h1 class="h1-card-services">Capuccino</h1>
@@ -83,5 +84,11 @@
             </div>
         </div>
     </section>
+    <!--SCRIPT DE SESSÃO-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        duration: 2000;
+      </script>
 </body>
 </html>

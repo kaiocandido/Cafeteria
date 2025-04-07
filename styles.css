@@ -307,7 +307,7 @@ main{
     margin-bottom: 0.5rem;
     text-align: center;
 }
-
+/*Efeito de ...*/
 .p-card-services{
     font-size: 0.875rem;
     transition: all 0.7s ease;
@@ -315,10 +315,20 @@ main{
     text-align: center;
     margin-bottom: 1rem;
     align-items: center;
-
+/*Efeito de ...*/
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
 }
+/*resposividade section*/
+@media screen and (max-width: 700px){
+    .cards-services{
+        grid-template-columns: repeat(1, 1fr);
+    }
 
+    #alter-img{
+        margin-top: 40px;
+    }
+    
+}
