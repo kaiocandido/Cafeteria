@@ -332,3 +332,23 @@ main{
     }
     
 }
+
+/*footer*/
+footer{
+    background-image: linear-gradient(to right, #4a1e1b, #4a1e1be6);
+    color: white;
+    padding: 0 2rem ;
+    height: 6.4rem;
+    display: grid;
+    align-items: center; 
+    justify-content: center;   
+
+}
+
+.p-footer{
+    color: white;
+    display: flex;
+    justify-content: center;    
+    align-items: center;    
+
+}
